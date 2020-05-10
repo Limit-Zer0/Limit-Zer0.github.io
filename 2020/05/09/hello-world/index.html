@@ -59,7 +59,7 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">Admin</h5>
-          <a href="mailto:/" title="&#x2F;" class="mail">&#x2F;</a>
+          <a href="mailto:null" class="mail">
         </hgroup>
       </div>
     </div>
@@ -67,9 +67,9 @@
       <ul class="nav">
         
             <li class="waves-block waves-effect">
-              <a href="/"  >
+              <a href="https://limit-zer0.github.io/"  >
                 <i class="icon icon-lg icon-home"></i>
-                主页
+                访问主页
               </a>
             </li>
         
@@ -316,18 +316,35 @@
 
 
 
-<section class="comments" id="comments">
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
-    <!-- UY END -->
-</section>
 
 
 
 
 
 
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "",
+            appKey: "",
+            avatar: "mm",
+            placeholder: "欢迎留言！！请文明发言！",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
 
 
 
