@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>math</title>
+  <title>Math</title>
   
-  
+  <subtitle>关于高中数学的一点小知识</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://limit-zer0.github.io/"/>
-  <updated>2020-05-10T08:57:32.676Z</updated>
+  <updated>2020-05-11T05:01:20.348Z</updated>
   <id>https://limit-zer0.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对数均值不等式</title>
+    <link href="https://limit-zer0.github.io/2020/05/11/%E5%AF%B9%E6%95%B0%E5%9D%87%E5%80%BC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
+    <id>https://limit-zer0.github.io/2020/05/11/%E5%AF%B9%E6%95%B0%E5%9D%87%E5%80%BC%E4%B8%8D%E7%AD%89%E5%BC%8F/</id>
+    <published>2020-05-10T16:11:05.644Z</published>
+    <updated>2020-05-11T05:01:20.348Z</updated>
+    
+    <content type="html"><![CDATA[<font face="微软雅黑" color=black size=5>&emsp;&emsp;设 $a >b >0$ , 且 $a\neq b$ ，则有 $\sqrt {ab} <\dfrac {a-b}{\ln a-\ln b} <\dfrac {a+b}{2}$证明如下：<p><br><br>不等号左边：<br>&emsp;&emsp;设 $0 &lt;x_{2} &lt;x_{1}$ ， 下面比较 $\ln x_{1}-\ln x_{2}$ 和 $\dfrac {x_{1}-x_{2}}{\sqrt {x_{1}x_{2}}}$ ， 令 $\dfrac {x_{1}}{x_{2}}=t^{2}$$( t &gt; 1)$，则 $\ln x_{1}-\ln x_{2}=\ln \left( t^{2}\right)$，&ensp; $\dfrac {x_{1}-x_{2}}{\sqrt {x_{1}x_{2}}}=\sqrt {t^{2}}-\sqrt {\dfrac {1}{t^{2}}}$</p><p><br><br>&emsp;&emsp;再设 $f\left( t\right) =\ln \left( t^{2}\right) -t+\dfrac {1}{t}$ ，则 $f’\left( t\right) =-\dfrac {\left( t-1\right) ^{2}}{t}$ ，此时由 $f’\left( x\right) &lt;0$得 $t&gt;1$ ，而 $f(1)=0$ ，故 $f(t)$ 在 $(1,+∞)$ 单调递减，则 $f(t)&lt;0$ ，即 $\ln x_{1}-\ln x_{2} &lt; \dfrac {x_{1}-x_{2}}{\sqrt {x_{1}x_{2}}}$ ，左边不等式从而得证。</p><p><br><br>不等号右边：<br>&emsp;&emsp;设 $0 &lt;x_{2} &lt;x_{1}$ ，下面比较 $\ln x_{1}-\ln x_{2}$ 和  $2\left( \dfrac {x_{1}-x_{2}}{x_{1}+x_{2}}\right)$ ，令$\dfrac {x_{1}}{x_{2}}=t$$( t &gt; 1)$，则$\ln x_{1}-\ln x_{2}=\ln t$ ，$2\left( \dfrac {x_{1}-x_{2}}{x_{1}+x_{2}}\right) = 2\left( \dfrac {t-1}{t+1}\right)$</p><p><br><br><br>&emsp;&emsp;再设$f(t)=ln t -2\left( \dfrac {t-1}{t+1}\right)$，则 $f’\left( t\right) =\dfrac {\left( t+3\right) \left( t-1\right) }{t\left( t+1\right) ^{2}}$ ，此时由 $f’\left( x\right) &gt;0$得 $t&gt;1$ ，$∴$ $f(t)$ 在 $(1,+∞)$ 单调递增，则 $f(t)&gt;0$ ，即 $\ln x_{1}-\ln x_{2} &gt; 2\left( \dfrac {x_{1}-x_{2}}{x_{1}+x_{2}}\right)$ ，右边不等式从而得证。</p><p><br><br><br><br>&emsp;&emsp;口诀：对数平均数大于几何平均数小于算数平均数</p><p><br><br>由 $a=e^{c},b=e^{d}$ 我们可以得到另一组不等式，即 $\sqrt {e^{c+d}} &lt;\dfrac {e^{c}-e^{d}}{c-d} &lt;\dfrac {e^{c}+e^{d}}{2}$ .</p><p><br><br>运用：</p><p><br><br>(2018全国Ⅰ卷）21.已知函数 $f\left( x\right) =\dfrac {1}{x}-x+a\ln x$ ，<br>（1）讨论 $f(x)$ 的单调性<br>（2）若$f(x)$存在两个零点 $x_1$， $x_2$，证明$\dfrac {f(x_{1})-f(x_{2})}{x_{1}-x_{2}}$ &lt; $a-2$ .</p><p><br><br>&emsp;&emsp;解：(2) 设 $x_1&gt;x_2&gt;0$ ，由（1）可得 $a&gt;2$ 且 $x_1+x_2=a ，x_1x_2=1$</p><p> $∴f\left( x_{1}\right) -f\left( x_{2}\right) =\dfrac {1}{x_{1}}-\dfrac {1}{x_{2}}-x_{1}+x_{2}+a\ln x_{1}-a\ln x_{2}$</p><p><br> $=-\dfrac {1}{x_{1}x_{2}}-1+a\dfrac {\ln x_{1}-\ln x_{2}}{x_{1}-x_{2}}$</p><p><br> $=-2+\dfrac {\ln x_{1}-\ln x_{2}}{x_{1}-x_{2}}$</p><p><br><br>故 $\dfrac {f(x_{1})-f(x_{2})}{x_{1}-x_{2}}$ &lt; $a-2$ 等价于 $-2+a\dfrac {\ln x_{1}-\ln x_{2}}{x,-x_{2}} &lt;a-2$</p><p><br><br>所以目标不等式等价于：$\dfrac {\ln x_1-\ln x_2}{x_1-x_2} &lt; 1$ ，</p><p><br><br>此时马上联想到对数均值不等式中的$\sqrt {x_1x_2} &lt;\dfrac {x_1-x_2}{\ln x_1-\ln x_2}$</p><p><br><br>即 $\dfrac {\ln x_{1}-\ln \times 2}{x_{1}-x_{2}} &lt;\dfrac {1}{\sqrt {x_{1}x_{2}}}$ ，</p><p><br><br> $∵\sqrt {x_{1}x_{2}}=1$</p><p><br><br> $∴ \dfrac {\ln x_1-\ln x_2}{x_1-x_2} &lt; 1$ 得证.</p><p><br><br> 故原命题得证.<br></font></p><p><br><br><br><br><br><font face="黑体" color=green size=40><br><br><br>&emsp;&emsp;注：考试时对于使用此不等式的大题，最好先做出证明，否则有可能失分！！！<br><br><br>&emsp;&emsp;注：考试时对于使用此不等式的大题，最好先做出证明，否则有可能失分！！！<br><br><br>&emsp;&emsp;注：考试时对于使用此不等式的大题，最好先做出证明，否则有可能失分！！！<br></font></p><p><br><br><br><br><br><font color=red size=50 face="华文细黑"><br>如有错漏之处，还请在评论中指出！<br>谢谢！</p></font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;font face=&quot;微软雅黑&quot; color=black size=5&gt;
+&amp;emsp;&amp;emsp;设 $a &gt;b &gt;0$ , 且 $a\neq b$ ，则有 $\sqrt {ab} &lt;\dfrac {a-b}{\ln a-\ln b} &lt;\dfrac {a+b}{2}$
+证明如
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何对圆锥曲线进行求导?</title>
